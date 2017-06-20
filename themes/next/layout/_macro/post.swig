@@ -113,6 +113,15 @@
             </span>
           {% endif %}
 
+          {% if theme.word_count %}
+            <span class="post-letters-count">
+              &nbsp; | &nbsp;
+              <span>{{ wordcount(post.content) }} 字</span>
+              &nbsp; | &nbsp;
+              <span>{{ min2read(post.content) }} min</span>
+            </span>
+          {% endif %}
+
           {% if post.comments %}
             {% if (theme.duoshuo and theme.duoshuo.shortname) or theme.duoshuo_shortname %}
               <span class="post-comments-count">

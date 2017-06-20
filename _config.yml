@@ -63,6 +63,9 @@ time_format: HH:mm:ss
 per_page: 5
 pagination_dir: page #分页目录
 
+# 开启字数统计
+word_count: true
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
